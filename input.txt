@@ -1,1 +1,1 @@
-JS is synchronous and Single threaded language
+JS is synchronous and Single threaded languageJS is high level,interpreted scripting language
