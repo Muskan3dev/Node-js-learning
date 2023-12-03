@@ -13,4 +13,7 @@ const fs = require('fs');
 //creating a file inside the directory
 //fs.writeFileSync("json.txt","Node js is runtime enviroment for javascript");
 //Updating the  file content
-fs.appendFileSync("practice/json.txt", "It is  built on chrome's V8 engine");
+//fs.appendFileSync("practice/json.txt", "It is  built on chrome's V8 engine");
+//Read content of the file
+const data=fs.readFileSync("node/json.txt","utf8");
+console.log({"data":data})
