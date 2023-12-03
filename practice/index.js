@@ -9,6 +9,8 @@
 
 const fs = require('fs');
 //creating a directory
-fs.mkdirSync("node");
+//fs.mkdirSync("node");
 //creating a file inside the directory
-fs.writeFileSync("json.txt","Node js is runtime enviroment for javascript");
+//fs.writeFileSync("json.txt","Node js is runtime enviroment for javascript");
+//Updating the  file content
+fs.appendFileSync("practice/json.txt", "It is  built on chrome's V8 engine");
