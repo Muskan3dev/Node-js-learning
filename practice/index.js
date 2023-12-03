@@ -28,3 +28,11 @@ console.log({ data: data });
 //Rename file
 
 fs.renameSync("node/json.txt", "node/json-Data.txt");
+
+//Delete the file
+
+fs.unlinkSync("node/json-Data.txt")
+
+//Delete directory
+
+fs.rmdirSync("node");
