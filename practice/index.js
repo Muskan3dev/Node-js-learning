@@ -11,3 +11,4 @@ const fs = require('fs');
 //creating a directory
 fs.mkdirSync("node");
 //creating a file inside the directory
+fs.writeFileSync("json.txt","Node js is runtime enviroment for javascript");
