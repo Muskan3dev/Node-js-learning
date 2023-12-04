@@ -47,3 +47,11 @@ fs.rename("intro.txt", "introduction.txt", (err) => {
   }
   console.log("File renamed successfully");
 });
+
+//deleting the file
+fs.unlink("introduction.txt", (err) => {
+  if (err) {
+    console.error(err);
+  }
+  console.log("File deleted successfully");
+});
