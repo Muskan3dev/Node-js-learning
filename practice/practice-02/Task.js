@@ -27,3 +27,15 @@ fs.writeFile(
     console.log("File created successfully");
   }
 );
+
+//update the data in the file
+fs.appendFile(
+  "intro.txt",
+  " .It is used to make structure of web pages.",
+  (err) => {
+    if (err) {
+      console.error(err);
+    }
+    console.log("File Updated successfully");
+  }
+);

@@ -1,1 +1,1 @@
-Html stands for hypertext markup language
+Html stands for hypertext markup language .It is used to make structure of web pages.
