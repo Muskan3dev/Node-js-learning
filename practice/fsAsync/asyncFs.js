@@ -14,3 +14,11 @@ fs.appendFile(
     console.log("Updated Successfully");
   }
 );
+
+//reading file content
+fs.readFile("read.txt","UTF-8",(err,data)=>{
+    if(err){
+        console.error(err);
+    }
+console.log(data);
+});
