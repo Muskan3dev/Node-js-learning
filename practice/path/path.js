@@ -2,10 +2,26 @@
 const path = require("path");
 
 //dirname
-console.log(path.dirname("C:\Users\Muskan\Desktop\Node-js-learning\practice\practice-02"));
+console.log(
+  path.dirname("C:UsersMuskanDesktopNode-js-learningpracticepractice-02")
+);
 
 //extension of the file
-console.log(path.extname("C:\Users\Muskan\Desktop\Node-js-learning\practice\practice-02/path.js"));
+console.log(
+  path.extname(
+    "C:UsersMuskanDesktopNode-js-learningpracticepractice-02/path.js"
+  )
+);
 
 //filename
-console.log(path.basename("C:\Users\Muskan\Desktop\Node-js-learning\practice\practice-02/path.js"));
+console.log(
+  path.basename(
+    "C:UsersMuskanDesktopNode-js-learningpracticepractice-02/path.js"
+  )
+);
+
+//parsing the path
+const mypath = path.parse(
+  "C:UsersMuskanDesktopNode-js-learningpracticepractice-02/path.js"
+);
+console.log(mypath);
