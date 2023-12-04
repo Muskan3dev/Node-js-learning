@@ -1,1 +1,1 @@
-chrome's V8 engine is written in C++
+chrome's V8 engine is written in C++ Node.js was initially written by Ryan Dahl in 2009 
