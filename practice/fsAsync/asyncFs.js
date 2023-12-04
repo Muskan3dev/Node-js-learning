@@ -16,9 +16,17 @@ fs.appendFile(
 );
 
 //reading file content
-fs.readFile("read.txt","UTF-8",(err,data)=>{
+ fs.readFile("read.txt","UTF-8",(err,data)=>{
     if(err){
         console.error(err);
     }
-console.log(data);
+console.log({"data":data});
+});
+ 
+//rename file
+fs.rename('read.txt','reading.txt',(err)=>{
+    if(err){
+        console.log(error);
+    }
+    console.log("Updated Successfully");
 });
