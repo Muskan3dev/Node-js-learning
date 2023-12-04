@@ -9,9 +9,21 @@
 const fs = require("fs");
 
 //creating a folder named html
-fs.mkdir("html",(err)=>{
-if(err){
+fs.mkdir("html", (err) => {
+  if (err) {
     console.error(err);
-}
-console.log("Directory created successfully");
+  }
+  console.log("Directory created successfully");
 });
+
+//creating a file inside the directory
+fs.writeFile(
+  "intro.txt",
+  "Html stands for hypertext markup language",
+  (err) => {
+    if (err) {
+      console.error(err);
+    }
+    console.log("File created successfully");
+  }
+);
