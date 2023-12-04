@@ -55,3 +55,11 @@ fs.unlink("introduction.txt", (err) => {
   }
   console.log("File deleted successfully");
 });
+
+//deleting the folder
+fs.rmdir("html", (err) => {
+  if (err) {
+    console.error(err);
+  }
+  console.log("Folder deleted successfully");
+});
