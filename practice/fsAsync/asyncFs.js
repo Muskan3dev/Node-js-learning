@@ -1,11 +1,11 @@
 const fs = require("fs");
 
 //Creating file Asynchronously
-fs.writeFile("read.txt", "chrome's V8 engine is written in C++", (err) => {
+ fs.writeFile("read.txt", "chrome's V8 engine is written in C++", (err) => {
   console.log("File created successfully");
   console.log("error");
-});
-
+}); 
+ 
 //Updating file content
 fs.appendFile(
   "read.txt",
@@ -24,9 +24,17 @@ console.log({"data":data});
 });
  
 //rename file
-fs.rename('read.txt','reading.txt',(err)=>{
+ fs.rename('read.txt','reading.txt',(err)=>{
     if(err){
         console.log(error);
     }
     console.log("Updated Successfully");
+}); 
+ 
+//Deleting file
+fs.unlink("reading.txt",(err)=>{
+if(err){
+    console.error(err)
+}
+console.log("File deleted successfully");
 });
